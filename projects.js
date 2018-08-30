@@ -48,7 +48,7 @@ const printToDom = (stringToPrint, divId) => {
             newString +=    `<img src="${projects.project[i].screenshot}"></>`;
             newString +=    `<p>${projects.project[i].description}</p>`;
             newString +=    `<p>${projects.project[i].technologiesUsed}</p>`;
-            newString +=    `<p>${projects.project[i].available}</p>`;
+            
             newString +=    `<p>${projects.project[i].url}</p>`;
             newString +=    `<p>${projects.project[i].githubUrl}</p>`;
             newString += `</div>`;
