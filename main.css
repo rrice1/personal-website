@@ -1,3 +1,35 @@
-body{
+nav{
     background-color: aqua;
+}
+.topTitle{
+
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+}
+#navLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#navLinks > li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navToBio{
+    margin-right:10px;
+    margin-top: 10px;
+}
+#navToTechnologies{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#navToProjects{
+    margin-right: 10px;
+    margin-top: 10px;
 }
