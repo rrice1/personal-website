@@ -58,4 +58,44 @@ const printToDom = (stringToPrint, divId) => {
         
         };
 
+    const home = () => {
+      document.getElementById('home').addEventListener('click',()=>{
+        var e = document.getElementById('home');//same thing
+        e.addEventListener('click',function(){location.reload()})
+      })
+    }
+
+    const hideNonBioStuff = () => {
+document.getElementById('navToBio').addEventListener('click', () => {
+  var e = document.getElementById('navToBio');//same thing
+  e.addEventListener('click',function(){location.reload()})
+  document.getElementById('technologiesPage').style.display = 'none';
+  document.getElementById('projectsPage').style.display = 'none';
+})
+    }
+
+
+    const hideNonTechStuff = () => {
+      document.getElementById('navToTechnologies').addEventListener('click', () => {
+        var e = document.getElementById('navToTechnologies');//same thing
+        e.addEventListener('click',function(){location.reload()})
+        document.getElementById('bioPage').style.display = 'none';
+        document.getElementById('projectsPage').style.display = 'none';
+      })
+          }
+
+
+          const hideNonProjectStuff = () => {
+            document.getElementById('navToProjects').addEventListener('click', () => {
+              // "window.location.href=window.location.href" 
+              var e = document.getElementById('navToProjects');//same thing
+              e.addEventListener('click',function(){location.reload()})
+              document.getElementById('technologiesPage').style.display = 'none';
+              document.getElementById('bioPage').style.display = 'none';
+
+            })
+                }
+    hideNonTechStuff();
+    hideNonBioStuff();
+    hideNonProjectStuff();
     createProjectCards();
