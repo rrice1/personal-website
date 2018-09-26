@@ -49,8 +49,8 @@ const printToDom = (stringToPrint, divId) => {
             newString +=    `<p>${projects.project[i].description}</p>`;
             newString +=    `<p>${projects.project[i].technologiesUsed}</p>`;
             
-            newString +=    `<p>${projects.project[i].url}</p>`;
-            newString +=    `<p>${projects.project[i].githubUrl}</p>`;
+            newString +=    `<a href=${projects.project[i].url}>Click here to go to this project's repository</a><br><br>`;
+            newString +=    `<a href=${projects.project[i].githubUrl}>Click here to go to this project's repository</a><br><br>`;
             newString += `</div>`;
             printToDom(newString, 'projectsPage')
             }
