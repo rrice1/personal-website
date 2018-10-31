@@ -1,3 +1,12 @@
+import $ from 'jquery';
+import 'bootstrap';
+
+
+import './index.scss';
+
+
+
+
 let projects = {
     project : [
    {
@@ -88,14 +97,13 @@ document.getElementById('navToBio').addEventListener('click', () => {
           const hideNonProjectStuff = () => {
             document.getElementById('navToProjects').addEventListener('click', () => {
               // "window.location.href=window.location.href" 
-              var e = document.getElementById('navToProjects');//same thing
-              e.addEventListener('click',function(){location.reload()})
-              document.getElementById('technologiesPage').style.display = 'none';
-              document.getElementById('bioPage').style.display = 'none';
-
-            })
-                }
-    hideNonTechStuff();
-    hideNonBioStuff();
-    hideNonProjectStuff();
-    createProjectCards();
+    const e = document.getElementById('navToProjects');// same thing
+    e.addEventListener('click',function(){location.reload()})
+    document.getElementById('technologiesPage').style.display = 'none';
+    document.getElementById('bioPage').style.display = 'none';
+  });
+};
+hideNonTechStuff();
+hideNonBioStuff();
+hideNonProjectStuff();
+createProjectCards();
