@@ -1,0 +1,32 @@
+
+{
+  "project": [
+    {
+      "title": "Cool Project",
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
+      "description": "This is the best project", 
+      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+      "available": true,
+      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
+      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+    },
+    {
+      "title": "Cooler Project",
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
+      "description": "I thought that was the best project, but it turns out that this is the best project", 
+      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+      "available": true,
+      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
+      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+    },
+    {
+      "title": "Coolest Project",
+      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
+      "description": "I was wrong yet again. This is the best project",
+      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+      "available": true,
+      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
+      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+    }
+  ]
+}
