@@ -8,7 +8,7 @@ import events from './javascripts/helpers/events';
 import projectView from './javascripts/components/projects';
 
 const initializeApp = () => {
-  events();
+  events.setEvents();
   projectView.initializeProjectsView();
 };
 

@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 
 const home = () => {
-  $('#home').addEventListener('click', () => {
+  $('#home').click(() => {
     const e = document.getElementById('home');// same thing
     e.addEventListener('click', () => { window.location.reload(); });
   });
