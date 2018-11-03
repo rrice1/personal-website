@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-import projectData from '../data/projectsData';
+import loadProjects from '../data/projectsData';
 
 
 const createProjectCards = (projects) => {
@@ -13,7 +13,6 @@ const createProjectCards = (projects) => {
       newString += `<img src="${projects[i].screenshot}"></>`;
       newString += `<p>${projects[i].description}</p>`;
       newString += `<p>${projects[i].technologiesUsed}</p>`;
-
       newString += `<a href=${projects[i].url}>Click here to go to this project's repository</a><br><br>`;
       newString += `<a href=${projects[i].githubUrl}>Click here to go to this project's repository</a><br><br>`;
       newString += '</div>';
@@ -39,12 +38,22 @@ const createProjectCards = (projects) => {
 //   });
 // };
 
+// const initializeProjectsView = () => {
+//   projectData.loadProjects().then((projects) => {
+//     createProjectCards(projects);
+//   }).catch((error) => {
+//     console.error(error);
+//   });
+// };
+
 const initializeProjectsView = () => {
-  projectData.loadProjects().then((projects) => {
-    createProjectCards(projects);
-  }).catch((error) => {
-    console.error(error);
-  });
+  loadProjects()
+    .then((data) => {
+      createProjectCards(data.data);
+    })
+    .catch((error) => {
+      console.error({ error });
+    });
 };
 
 export default { initializeProjectsView };
