@@ -9,35 +9,50 @@ const home = () => {
 };
 
 const hideNonBioStuff = () => {
-  document.getElementById('navToBio').addEventListener('click', () => {
-    const e = document.getElementById('navToBio');// same thing
-    e.addEventListener('click', () => { window.location.reload(); });
-    document.getElementById('technologiesPage').style.display = 'none';
-    document.getElementById('projectsPage').style.display = 'none';
+  $('#navToBio').click(() => {
+    $('#bioPage').show();
+    $('#projectsPage').hide();
+    $('#technologiesPage').hide();
   });
 };
 
 
+// const hideNonTechStuff = () => {
+//   $('#navToTechnologies').click(() => {
+//     const e = document.getElementById('navToTechnologies');// same thing
+//     e.addEventListener('click', () => { window.location.reload(); });
+//     document.getElementById('bioPage').style.display = 'none';
+//     document.getElementById('projectsPage').style.display = 'none';
+//   });
+// };
+
 const hideNonTechStuff = () => {
-  document.getElementById('navToTechnologies').addEventListener('click', () => {
-    const e = document.getElementById('navToTechnologies');// same thing
-    e.addEventListener('click', () => { window.location.reload(); });
-    document.getElementById('bioPage').style.display = 'none';
-    document.getElementById('projectsPage').style.display = 'none';
+  $('#navToTechnologies').click(() => {
+    $('#bioPage').hide();
+    $('#projectsPage').hide();
+    $('#technologiesPage').show();
   });
 };
 
 
 const hideNonProjectStuff = () => {
-  document.getElementById('navToProjects').addEventListener('click', () => {
-    // "window.location.href=window.location.href"
-    const e = document.getElementById('navToProjects');// same thing
-    e.addEventListener('click', () => { window.location.reload(); });
-    document.getElementById('technologiesPage').style.display = 'none';
-    document.getElementById('bioPage').style.display = 'none';
+  $('#navToProjects').click(() => {
+    $('#bioPage').hide();
+    $('#projectsPage').show();
+    $('#technologiesPage').hide();
   });
 };
 
+// for(let i=0; i<famousPeople.length;i++){
+//   document.getElementById(`s${[i]}`).addEventListener('click',(e)=>{
+//       // for if class=selected then classlist.toggle('unselected')
+//       for(let i=0; i<famousPeople.length;i++){
+//           if(document.getElementById(`s${[i]}`).classList.contains('selected')){
+//               // document.getElementsByClassName('selected').classList.toggle('selected')
+//               document.getElementById(`s${[i]}`).classList.toggle('selected')
+
+//           }
+//       }
 
 const setEvents = () => {
   hideNonTechStuff();
