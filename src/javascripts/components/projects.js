@@ -6,7 +6,7 @@ import loadProjects from '../data/projectsData';
 const createProjectCards = (projects) => {
   let newString = '';
 
-  for (let i = 0; i < projects.length; i + 1) {
+  for (let i = 0; i < projects.length; i += 1) {
     if (projects[i].available === true) {
       newString += '<div class="fullPage">';
       newString += `<h3>${projects[i].title}</h3>`;
