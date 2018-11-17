@@ -1,4 +1,4 @@
-import 'jquery';
+// import $ from 'jquery';
 import 'bootstrap';
 import firebase from 'firebase/app';
 import './index.scss';
@@ -12,7 +12,7 @@ import getAllProjectsFromDb from './javascripts/helpers/dataGetter';
 const getAndPrintAllProjects = () => {
   getAllProjectsFromDb()
     .then((allProjectsArray) => {
-      $('#projectsPage').html(createProjectCards(allProjectsArray));
+      createProjectCards(allProjectsArray);
     })
     .catch((error) => {
       console.error('Error in getting projects', error);
