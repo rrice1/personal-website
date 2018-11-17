@@ -1,24 +1,18 @@
-import $ from 'jquery';
-
-import loadProjects from '../data/projectsData';
+// import loadProjects from '../data/projectsData';
+import './projects.scss';
 
 
 const createProjectCards = (projects) => {
   let newString = '';
-
-  for (let i = 0; i < projects.length; i += 1) {
-    if (projects[i].available === true) {
-      newString += '<div class="fullPage">';
-      newString += `<h3>${projects[i].title}</h3>`;
-      newString += `<img src="${projects[i].screenshot}"></>`;
-      newString += `<p>${projects[i].description}</p>`;
-      newString += `<p>${projects[i].technologiesUsed}</p>`;
-      newString += `<a href=${projects[i].url}>Click here to go to this project's repository</a><br><br>`;
-      newString += `<a href=${projects[i].githubUrl}>Click here to go to this project's repository</a><br><br>`;
-      newString += '</div>';
-    }
-  }
-  $('#projectsPage').html(newString);
+  newString += '<div class="fullPage">';
+  newString += `<h3>${projects.title}</h3>`;
+  newString += `<img src="${projects.screenshot}"></>`;
+  newString += `<p>${projects.description}</p>`;
+  newString += `<p>${projects.technologiesUsed}</p>`;
+  newString += `<a href=${projects.url}>Click here to go to this project's repository</a><br><br>`;
+  newString += `<a href=${projects.githubUrl}>Click here to go to this project's repository</a><br><br>`;
+  newString += '</div>';
+  return newString;
 };
 //   projects.foreach((project) => {
 //     if (project.available === true) {
@@ -46,14 +40,14 @@ const createProjectCards = (projects) => {
 //   });
 // };
 
-const initializeProjectsView = () => {
-  loadProjects()
-    .then((data) => {
-      createProjectCards(data.data);
-    })
-    .catch((error) => {
-      console.error({ error });
-    });
-};
+// const initializeProjectsView = () => {
+//   loadProjects()
+//     .then((data) => {
+//       createProjectCards(data.data);
+//     })
+//     .catch((error) => {
+//       console.error({ error });
+//     });
+// };
 
-export default { initializeProjectsView };
+export default { createProjectCards };
