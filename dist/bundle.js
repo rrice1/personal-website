@@ -22687,7 +22687,7 @@ const createProjectCards = projects => {
     newString += `<p>${project.technologiesUsed}</p>`;
 
     newString += `<a href=${project.url}>Click here to go
- to this project's repository</a><br><br>`;
+ to the demo</a><br><br>`;
     newString += `<a href=${project.githubUrl}>Click here to
  go to this project's repository</a><br><br>`;
     newString += '</div>';
@@ -22737,7 +22737,7 @@ const createProjectCards = projects => {
 const baseUrl = __WEBPACK_IMPORTED_MODULE_1__db_apiKeys___default.a.firebaseKeys.databaseURL;
 
 const getAllProjectsFromDb = () => new Promise((resolve, reject) => {
-  __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(`${baseUrl}/project.json`).then(result => {
+  __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(`${baseUrl}/projects.json`).then(result => {
     const allProjectsObject = result.data;
     const allProjectsArray = [];
     if (allProjectsObject != null) {

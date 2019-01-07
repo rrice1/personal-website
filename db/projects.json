@@ -1,32 +1,34 @@
-
 {
-  "project": {
-    "project1":{
-      "title": "Cool Project",
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
-      "description": "This is the best project", 
-      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+  "projects": {
+  "project1":     
+  {
+      "title": "To Do App", 
+      "screenshot": "", 
+      "description": "This is a project from the Front-End side of NSS. We built a little To Do list application, featuring CRUD.", 
+      "technologiesUsed": "HTML, SCSS, JavaScript, Jquery, Bootstrap",
       "available": true,
-      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+      "url": "https://todo-f4105.firebaseapp.com", 
+      "githubUrl": "https://github.com/rrice1/toDo"
     },
-    "project2":{
-      "title": "Cooler Project",
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
-      "description": "I thought that was the best project, but it turns out that this is the best project", 
-      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "project2":
+    {
+      "title": "Developer Portal", 
+      "screenshot": "", 
+      "description": "This was our first project working with React. The idea was to compile different learning sources, and to pull data from Github. It was quite the learning experience.", 
+      "technologiesUsed": "HTML, SCSS, JavaScript, Jquery, Bootstrap",
       "available": true,
-      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+      "url": "https://developer-portal-fc55d.firebaseapp.com/", 
+      "githubUrl": "https://github.com/rrice1/developer-portal"
     },
-    "project3":{
-      "title": "Coolest Project",
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg",
-      "description": "I was wrong yet again. This is the best project",
-      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+    "project3":
+    {
+      "title": "Nutshell Cashews", 
+      "screenshot": "", 
+      "description": "This was a group project where we pulled from a weather API, used webpack, and used CRUD while connecting to firebase.", 
+      "technologiesUsed": "HTML, SCSS, JavaScript, Jquery, Bootstrap",
       "available": true,
-      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+      "url": "https://nutshell-cashews.firebaseapp.com/", 
+      "githubUrl": "https://github.com/nss-evening-cohort-8/nutshell-cashews"
     }
   }
 }
